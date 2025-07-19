@@ -16,6 +16,14 @@
 			</ol>
 		</nav>
         <hr>
+
+        <button onclick="toggleDarkMode()">Toggle Dark Mode</button>
+        <script>
+        function toggleDarkMode() {
+            document.body.classList.toggle('dark-mode');
+        }
+        </script>
+
         <h1>My Kernel</h1>
         <p>This is a hobby project.</p>
         <p>It is a simple kernel written in C and linker script.</p> 
