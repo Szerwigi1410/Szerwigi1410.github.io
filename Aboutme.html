@@ -21,20 +21,18 @@
         <script>
         function toggleDarkMode() {
             document.body.classList.toggle('dark-mode');
-            // Save the mode in localStorage
             if(document.body.classList.contains('dark-mode')) {
-            localStorage.setItem('darkMode', 'enabled');
+                localStorage.setItem('darkMode', 'enabled');
             } else {
                 localStorage.setItem('darkMode', 'disabled');
             }
         }
 
-        // On page load, check localStorage and set mode
-        window.onload = function() {
+        document.addEventListener('DOMContentLoaded', function() {
             if(localStorage.getItem('darkMode') === 'enabled') {
                 document.body.classList.add('dark-mode');
             }
-        };
+        });
         </script>
 
         <h1>About me</h1>
@@ -47,4 +45,4 @@
 
 
     </body>        
-</html> 
+</html>
