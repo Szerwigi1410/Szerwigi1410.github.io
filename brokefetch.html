@@ -27,28 +27,11 @@
         <hr>
 
         <button onclick="toggleDarkMode()">Toggle Dark Mode (beta)</button>
-        <script>
-        function toggleDarkMode() {
-            document.body.classList.toggle('dark-mode');
-            if(document.body.classList.contains('dark-mode')) {
-                localStorage.setItem('darkMode', 'enabled');
-            } else {
-                localStorage.setItem('darkMode', 'disabled');
-            }
-        }  
-
-        document.addEventListener('DOMContentLoaded', function() {
-            if(localStorage.getItem('darkMode') === 'enabled') {
-                document.body.classList.add('dark-mode');
-            }
-        });
-        </script> 
+        <script src="script.js"></script> 
         <h1>Brokefetch</h1>
         <p>Brokefetch is a simple yet complex fetch script written in bash.</p>
         <p>The only fetch script that doesn't pretend that your life is okay!.</p>
         <p>Make sure to star it on <a href="https://github.com/Szerwigi1410/brokefetch">GitHub</a></p>
         <p>It's also on <a href="https://aur.archlinux.org/packages/brokefetch-git">AUR</a></p>
         
-        <iframe width="640" height="360"
-       src="https://www.youtube.com/watch?v=49G8IwvPy54">
-       </iframe>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/49G8IwvPy54" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
