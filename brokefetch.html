@@ -43,6 +43,13 @@
         <br></br>
 
         <h2>Instalation:</h2>
+        <p>Run this curl command instead of clonning (to update just re-run it):</p>
+<!--------------------- Text field -->
+        <input type="text" value="curl -sSL https://raw.githubusercontent.com/Szerwigi1410/brokefetch/refs/heads/main/install.sh > install.sh ; chmod +x install.sh ; bash -c &quot;./install.sh&quot; ; rm -f install.sh" id="myInputCurl" readonly size="117">
+<!--------------------- Button to copy -->
+        <button onclick="myFunctionCurl()">Copy text</button>
+        <script src="brokefetch_js/scriptCurl.js"></script>
+<!---------------------------------------->
         <p>Clone the repository:</p>
 <!--------------------- Text field -->
         <input type="text" value="git clone https://github.com/Szerwigi1410/brokefetch.git" id="myInput" readonly size="40">
