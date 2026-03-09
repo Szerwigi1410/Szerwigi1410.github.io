@@ -1,0 +1,69 @@
+/* ===== Base ===== */
+body {
+    margin: 0;
+    font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+    background: #f5f6f8;
+    color: #1f2933;
+    transition: background 0.35s ease, color 0.35s ease;
+}
+
+/* ===== Dark Mode ===== */
+body.dark-mode {
+    background: #0f1115;   /* modern black */
+    color: #e4e6eb;
+}
+
+/* ===== Navigation ===== */
+nav {
+    width: fit-content;
+    margin: 30px auto;
+    padding: 12px 22px;
+    background: #ffffff;
+    border-radius: 14px;
+    box-shadow: 0 8px 24px rgba(0,0,0,0.08);
+    transition: all 0.3s ease;
+}
+
+/* ===== Menu ===== */
+#menu {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 26px;
+}
+
+/* ===== Links ===== */
+#menu a {
+    text-decoration: none;
+    color: #374151;
+    font-weight: 600;
+    font-size: 15px;
+    padding: 8px 16px;
+    border-radius: 8px;
+    transition: all 0.25s ease;
+}
+
+/* ===== Hover ===== */
+#menu a:hover {
+    background: #d314d3;      /* elegant purple accent */
+    color: white;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 16px rgba(124,58,237,0.35);
+}
+
+/* ===== Dark Mode Nav ===== */
+body.dark-mode nav {
+    background: #1a1d24;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.6);
+}
+
+/* ===== Dark Mode Links ===== */
+body.dark-mode #menu a {
+    color: #d1d5db;
+}
+
+body.dark-mode #menu a:hover {
+    background: #f65cd5;
+    color: white;
+}
